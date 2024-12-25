@@ -7,7 +7,7 @@ def playvideo(video_title):
     try:
         # Display the video using iframe
         st.markdown(
-        f'<iframe width="560" height="315" src="{video_title}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+        f'<iframe width="560" height="315" src="{https://youtube.com/shorts/sP7OCKYTg0U?si=Jqhklb_rr7PEaiee}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
         unsafe_allow_html=True
     )
     except Exception as e:
