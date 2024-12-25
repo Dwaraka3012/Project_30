@@ -73,7 +73,7 @@ def main():
                     st.error("Sorry, your answer is incorrect.")
                     st.write("Sorry you given answer is absolute Wrong ",emojize(":pensive_face:"))
     with col2:
-         st.image("F:\website.png")
+         st.image("website.png")
 
 # Display the final score
     st.write("---")
