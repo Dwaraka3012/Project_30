@@ -1,11 +1,11 @@
 import streamlit as st
 from emoji import emojize
-import pywhatkit
+#import pywhatkit
 
 
 def playvideo(video_title):
     try:
-        pywhatkit.playonyt(video_title)
+        st.write(video_title)
     except Exception as e:
         print("something went wrong Check with Developer")
 
