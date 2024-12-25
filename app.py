@@ -5,7 +5,7 @@ from emoji import emojize
 
 def playvideo(video_title):
     try:
-        st.write(video_title)
+        st.video(video_title)
     except Exception as e:
         print("something went wrong Check with Developer")
 
