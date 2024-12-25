@@ -23,7 +23,7 @@ def ask_questions():
         st.write(f"Question {i + 1}: {q['question']}")
         user_choice = st.radio(
             f"Please select an option for Question {i + 1}:",
-            ["Yes", "No"],
+            ["No","Yes"],
             key=f"video_choice_{i}"
         )
 
