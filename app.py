@@ -5,7 +5,16 @@ from emoji import emojize
 
 def playvideo(video_title):
     try:
-        st.video(video_title)
+        # Display the video using iframe
+        st.markdown(
+            f"""
+            <iframe width="560" height="315" src="{video_title}" 
+            frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            """,
+            unsafe_allow_html=True,
+        )
     except Exception as e:
         print("something went wrong Check with Developer")
 
