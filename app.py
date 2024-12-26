@@ -6,7 +6,13 @@ from emoji import emojize
 def playvideo(video_title):
     try:
         # Display the video using iframe
-        st.video(video_title)
+        st.markdown(
+            f"""
+            <iframe width="700" height="394" src="{video_title}" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            """,
+            unsafe_allow_html=True,
     except Exception as e:
         print("something went wrong Check with Developer")
 
@@ -15,8 +21,8 @@ def ask_questions():
     
     # List of additional questions and their corresponding videos
     additional_questions = [
-        {"question": "Do you want to know how i feel when i saw you for the first time?", "video": "https://youtube.com/shorts/sP7OCKYTg0U?si=Jqhklb_rr7PEaiee"},
-        {"question": "Do you want to know how i feel when your not taking to me?", "video": "https://www.youtube.com/shorts/x0-y26W9aOw"}
+        {"question": "Do you want to know how should i feel for you click on below yes (Play vidoe)", "video": "https://www.youtube.com/embed/1-PTfDWk_u4"},
+        {"question": "Do you want to know how i feel when your not taking to me?", "video": "https://www.youtube.com/embed/vKbYFos88G0"}
     ]
 
     for i, q in enumerate(additional_questions):
