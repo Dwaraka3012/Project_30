@@ -13,6 +13,7 @@ def playvideo(video_title):
             allowfullscreen></iframe>
             """,
             unsafe_allow_html=True,
+            )
     except Exception as e:
         print("something went wrong Check with Developer")
 
