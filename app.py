@@ -24,7 +24,7 @@ def ask_questions():
     additional_questions = [
         {"question": "Do you want to know how i Introduce you to my MOM click on below yes (Play vidoe)", "video": "https://www.youtube.com/embed/1-PTfDWk_u4"},
         {"question": "Do you want to know how i feel when your not taking to me?", "video": "https://www.youtube.com/embed/vKbYFos88G0"},
-        {"question": "Do you want to know how i feel everytime i saw you ?","video","https://www.youtube.com/embed/EIcukYHB0iU"}
+        {"question": "Do you want to know how i feel everytime i saw you ?","video":"https://www.youtube.com/embed/EIcukYHB0iU"}
     ]
 
     for i, q in enumerate(additional_questions):
