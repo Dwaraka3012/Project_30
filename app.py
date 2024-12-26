@@ -85,7 +85,7 @@ def main():
 
 # Display the final score
     st.write("---")
-    st.subheader("You won points are:",st.session_state.score)
+    st.write("You won points are:",st.session_state.score)
 
     st.write("----")
     ask_questions()
