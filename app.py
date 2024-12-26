@@ -84,8 +84,11 @@ def main():
          st.image("website.png")
 
 # Display the final score with a larger font size
+    # Display the final score with a larger font size
     st.write("---")
-    st.caption("You won points are:",st.session_state.score)
+    st.markdown(
+    f"<h1 style='text-align: center; color: green;'>You won points are: {st.session_state.score}</h1>",
+    unsafe_allow_html=True)
     
     st.write("----")
     ask_questions()
