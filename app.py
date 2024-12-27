@@ -45,37 +45,6 @@ def ask_questions():
 
 def main():
     st.title("Romantic App")
-    # Prompt user to select a date
-    selected_date = st.date_input("Please select a date:", min_value=date(2024, 1, 1))
-
-    # Define the target date
-    target_date = date(2024, 12, 30)
-
-    # Check the selected date and display appropriate message or play video
-    if selected_date == target_date:
-        st.success("The selected date is December 30! Suprise for you PLEASE CLICK THE BELOW LINK AND DOWNLOAD VIDEO")
-      # Video file path
-        video_file_path = "F:\DR.mp4"  # Replace with the path to your video file
-
-        # Title
-        st.title("Share a Video with the User")
-        st.markdown(
-    "<h3 style='color: red;'>BE CAREFUL WHILE PLAYING THE VIDEO IF YOU ARE AT HOME</h3>",
-    unsafe_allow_html=True,
-     )
-        # Create a download button for the video
-        with open(video_file_path, "rb") as video_file:
-            video_bytes = video_file.read()
-            st.download_button(
-                label="Download Video",
-                data=video_bytes,
-                file_name="shared_video.mp4",  # The name of the file when downloaded
-                mime="video/mp4"
-            )
-    elif selected_date < target_date:
-        st.info("Advance Happy Birthday Nana!")
-    else:
-        st.warning("The selected date is after December 30. You've missed the big day!")
     # List of questions and their correct answers
     questions = [
         {"question":"You want a iteam for every year (you wishing to buy that every year:)", "answer": "Diary"},
